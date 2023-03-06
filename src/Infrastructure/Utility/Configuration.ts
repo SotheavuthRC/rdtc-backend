@@ -1,8 +1,7 @@
-
 export const Configuration = {
     siteName: "RDTC",
     copyright: "RDTC",
-    logoPath: "/logo.svg",
+    logoPath: "/rdtc-logo.jpg",
     fixedHeader: true, // sticky primary layout header
 
     /* Layout configuration, specify which layout to use for route. */
@@ -36,4 +35,4 @@ export const Configuration = {
         ],
         defaultLanguage: "en",
     },
-}
+};

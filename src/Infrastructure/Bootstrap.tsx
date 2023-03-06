@@ -13,21 +13,21 @@ import ApplicationReducer from "Modules/Applications/Reducer";
 
 const key = "application";
 export default function Bootstrap() {
-  useInjectReducer({ key, reducer: ApplicationReducer });
-  // useInjectSaga({ key, saga: ApplicationSaga });
+    useInjectReducer({ key, reducer: ApplicationReducer });
+    // useInjectSaga({ key, saga: ApplicationSaga });
 
-  // fields
+    // fields
 
-  return (
-    <>
-      <Helmet titleTemplate="%s - CGMC" defaultTitle="CGMC">
-        <meta name="description" content="CGMC" />
-      </Helmet>
+    return (
+        <>
+            <Helmet titleTemplate="%s - CGMC" defaultTitle="CGMC">
+                <meta name="description" content="CGMC" />
+            </Helmet>
 
-      <BrowserRouter>
-        {/* <SnackMessage /> */}
-        <RootRouter />
-      </BrowserRouter>
-    </>
-  );
+            <BrowserRouter>
+                {/* <SnackMessage /> */}
+                <RootRouter />
+            </BrowserRouter>
+        </>
+    );
 }

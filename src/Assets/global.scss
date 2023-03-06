@@ -15,3 +15,43 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.admin-navigation {
+    padding-top: 4px;
+
+    .ant-menu-item-icon {
+        @apply text-xl #{!important};
+    }
+
+    .ant-menu-item-selected {
+        @apply bg-blue-400 text-slate-100 #{!important};
+    }
+
+    .ant-menu-item {
+        padding-top: 0.75rem !important;
+    }
+
+    li {
+        margin: 0;
+        padding: 0;
+        margin-block: 0px !important;
+        @apply flex flex-col items-center text-white h-auto #{!important};
+
+
+
+        .ant-menu-submenu-title {
+            padding-inline-end: 20px;
+            @apply flex flex-col pt-3 items-center text-white h-auto #{!important};
+        }
+
+
+        .ant-menu-title-content {
+            margin-inline-start: 0 !important;
+        }
+
+        .ant-menu-submenu-arrow {
+            display: none;
+            // inset-inline-end: 4px;
+        }
+    }
+}

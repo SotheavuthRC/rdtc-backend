@@ -60,7 +60,7 @@ const PrivateRoute = ({
     // }
     const isLogged = true;
 
-    return isLogged && <div>{children}</div>;
+    return isLogged && <div className=" w-full min-h-screen">{children}</div>;
 };
 export interface PrivateRouteType {
     defaultPermission: boolean;
