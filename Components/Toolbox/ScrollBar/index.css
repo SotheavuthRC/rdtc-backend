@@ -1,0 +1,25 @@
+:global .ps--active-x > .ps__rail-x,
+:global .ps--active-y > .ps__rail-y {
+  background-color: transparent;
+}
+:global .ps__rail-x:hover > .ps__thumb-x,
+:global .ps__rail-x:focus > .ps__thumb-x {
+  height: 8px;
+}
+:global .ps__rail-y:hover > .ps__thumb-y,
+:global .ps__rail-y:focus > .ps__thumb-y {
+  width: 8px;
+}
+:global .ps__rail-y,
+:global .ps__rail-x {
+  z-index: 9;
+}
+:global .ps__thumb-y {
+  width: 4px;
+  right: 4px;
+}
+:global .ps__thumb-x {
+  height: 4px;
+  bottom: 4px;
+}
+/*# sourceMappingURL=index.css.map */
